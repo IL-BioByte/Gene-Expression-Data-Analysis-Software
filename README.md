@@ -3,7 +3,7 @@ qPCR (quantitative Polymerase Chain Reaction) Data Analysis Software is designed
 
 Key features of this qPCR data analysis software include:
 
-1.Quality control and data filtering: Ensures the integrity of the data by identifying outliers, low-quality runs, or inefficient amplifications.
+1. Quality control and data filtering: Ensures the integrity of the data by identifying outliers, low-quality runs, or inefficient amplifications.
 
 2. Baseline correction and normalization: Automatically corrects for background noise and normalizes data using reference genes or housekeeping genes to account for sample variability.
    
