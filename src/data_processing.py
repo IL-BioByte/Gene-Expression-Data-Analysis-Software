@@ -1,17 +1,14 @@
 import pandas as pd
 
+
 def load_data(excel_path): 
     df = pd.read_excel(excel_path)  #To load the excel file
-    df.set_index(df.columns[0],inplace=True)  #Set first column as index (Sample IDs)
-    df = df.apply(pd.to_numeric, errors='coerce')  # invalid parsing will be set as NaN
-    #df.fillna(df.mean(), inplace=True) #Use this if want to use mean to replace missing value
+    df.set_index([df.columns[0], df.columns[1]], inplace=True)  # Set the first and second columns as the index
+    df = df.apply(pd.to_numeric, errors='coerce') 
     df.dropna(inplace=True)  #drop missing values
 
     return df
 
-if __name__ == "__main__":
-    df = load_data(excel_path)
-    print(df.head())
 
 
 # #DATA NORMALIZATION
